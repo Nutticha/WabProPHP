@@ -1,12 +1,14 @@
 <html>
-    <head><title>การก าหนดค่าแบบอ้างอิง</title></head>
+    <head><title>การกำหนดค่าแบบอ้างอิง</title></head>
     <body>
         <?php
             $x = 123;
             $y = "abc";
             echo "$ x = "; echo $x; echo "<br />";
             echo "$ y = "; echo $y; echo "<br />";
-            $x = &$y;
+            //$x = &$y;
+            //$x = $y;
+            $y = &$x;
             echo "$ x = &$ y <br />";
             echo "$ x = "; echo $x; echo "<br />";
             echo "New value $ x<br />";
