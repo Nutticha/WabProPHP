@@ -12,6 +12,7 @@
         echo "<button onclick='history.back()'>กลับ</button>";
         echo "<p></p><p>รางวัล เลขที่ออก คือ : $lucky_number</p>";
         echo "</div>";
+        
     }
     else {
         echo "<div style='border:1px solid black;padding:15px;display:inline-block;'>";

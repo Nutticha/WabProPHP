@@ -21,6 +21,7 @@
   else if($result > 69){
     echo" Your Grade is : B "; 
   }
+  
   else if($result > 64){
     echo" Your Grade is : C+ "; 
   }
