@@ -40,7 +40,7 @@
     for($n = 0 ; $n < $nums; $n++) {
         echo '<tr><td align="center" width="90">' . ($n+1 ) . '</td>';
         echo '<td align="center" width="90">' . $score[$n] . '</td>';
-        echo '<td align="center" width="90">' . grade($score[$n]) . '</td></tr>';
+        echo '<td align="center" width="90">' . $grade . '</td></tr>';
     }
     echo '<tr><td colspan="3" align="center"> Average Score : ';
     echo average( $score, $nums);
@@ -53,7 +53,7 @@
     echo '<tr><td align="center" width="90">Grade</td>';
     echo '<td align="center" width="90">จำนวน</td>';
     for($i = 0 ; $i <= 4 ; $i++){
-        $score1 = array();0,0,0,0,0
+        $score1 = array(0,0,0,0,0);
         $score2 = array('A' , 'B' , 'C' , 'D' , 'F');
         
         
@@ -61,6 +61,26 @@
         echo'<td colspan="1" align="center">'.$score1[$i].'</td></tr>';
     }
     echo '</table>';
+    if($score[$n] >= 80){
+        $score1[0]++; 
+        $grade = "A";
+    }
+    else if($score[$n] >= 70){
+        $score1[1]++;
+        $grade = "B";
+    }
+    else if($score[$n] >= 60){
+        $score1[2]++;
+        $grade = "C";
+    }
+    else if($score[$n] >= 50){
+        $score1[3]++;
+        $grade = "D";
+    }
+    elseif($score[$n] >= 49) {
+        $score1[4]++;
+        $grade = "F";
+    }
     function average($data, $max) {
         $total = 0;
         for($n = 0 ; $n < $max; $n++) {
@@ -69,30 +89,7 @@
         return( $total / $max );
         }
     
-    function grade($score){
-        if($score >= 80){
-           
-            $grade = "A";
-        }
-        else if($score >= 70){
-            
-            $grade = "B";
-        }
-        else if($score >= 60){
-            
-            $grade = "C";
-        }
-        else if($score >= 50){
-            
-            $grade = "D";
-        }
-        else {
-           
-            $grade = "F";
-        }
-        return $grade;
-
-    }    
+    
     ?>
     </body>
     </html>
