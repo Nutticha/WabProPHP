@@ -1,0 +1,13 @@
+.test{
+    width: 500 px;
+    height: 500 px;
+    background: black;
+    border: 3 px ;
+}
+.h1 {
+    color: maroon;
+    margin-left: 40px;
+  }
+  .body {
+    background-color: lightblue;
+  } 

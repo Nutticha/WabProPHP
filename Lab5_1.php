@@ -3,18 +3,18 @@
 <head>
 <title>Arithmetic Operators</title>
 <?php
-$x = 10;
-$y = 20;
+    $x = 10;
+    $y = 20;
 ?>
 </head>
 <body>
 <?php
-echo "\$x = $x, \$y = $y <br/>";
-echo "\$x + \$y = "; echo $x + $y; echo "<br>";
-echo "\$x - \$y = "; echo $x - $y; echo "<br>";
-echo "\$x * \$y = "; echo $x * $y; echo "<br>";
-echo "\$x / \$y = "; echo $x / $y; echo "<br>";
-echo "\$x % \$y = "; echo $x % $y; echo "<br>";
+    echo "\$x = $x, \$y = $y <br/>";
+    echo "\$x + \$y = "; echo $x + $y; echo "<br>";
+    echo "\$x - \$y = "; echo $x - $y; echo "<br>";
+    echo "\$x * \$y = "; echo $x * $y; echo "<br>";
+    echo "\$x / \$y = "; echo $x / $y; echo "<br>";
+    echo "\$x % \$y = "; echo $x % $y; echo "<br>";
 ?>
 </body>
 </html>

@@ -6,7 +6,7 @@
 </head>
 <body>
 <?php
-$grade = 'Z';
+$grade = 'A';
 $point = 0;
 switch( $grade) {
 
