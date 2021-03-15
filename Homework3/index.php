@@ -11,9 +11,10 @@
 
     <form method="post" action="CalculateCar.php">
     <img src="Pic/header.jpg" alt="" >
-    <p>Car Model</p>
+    <fieldset>
+        <legend align="center">Car Model</legend>
     <p>
-    เลือกรุ่นรถยนต์ : <select name="car" id="" onchange="">
+    เลือกรุ่นรถยนต์ : <select name="cars" id="" onchange="">
                 <option value="Accord" >Accord</option>
                 <option value="Civic" >Civic</option>
                 <option value="Jazz" >Jazz</option>
@@ -54,7 +55,7 @@
             <td align="center">4.00</td>
         </tr>
     </table>
-    
+    </fieldset>
     </form>
 </center>
 </body>
